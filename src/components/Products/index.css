@@ -1,0 +1,28 @@
+.header {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title {
+    color: red;
+    font-weight: bolder;
+    text-transform: uppercase;
+    /* font-size: 2rem; */
+}
+
+.subTitle {
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.subTitle:after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background: white;
+    position: absolute;
+    bottom: -10px;
+    left: 40%;
+}
