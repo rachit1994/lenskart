@@ -3,11 +3,13 @@ import { lazy, createElement, Suspense } from 'react';
 const Components: Record<string, any> = {
     Banner: lazy(() => import('./Header/Header.component')),
     Products: lazy(() => import('./Products/Products.component')),
-    Collections: lazy(() => import('./Products/Products.component'))
+    Collections: lazy(() => import('./Collections/Collections.component')),
+    Terms: lazy(() => import('./Terms/Terms.component')),
+    Contact: lazy(() => import('./Contact/Contact.component')),
+    Footer: lazy(() => import('./Footer/Footer.component'))
 }
 
 export default (data: any) => {
-    console.log('coming in components', data)
     if (typeof Components[data.template] !== "undefined") {
         return (
             <Suspense fallback={<div>Loading...</div>} key={data._uid}>

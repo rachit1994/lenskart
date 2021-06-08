@@ -1,19 +1,24 @@
 header {
-    background-repeat: round;
-    background-size: cover;
-    background-size: cover;
     width: 100%;
-    overflow: scroll;
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
     -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+    display: flex;
+    background-size: 100% !important;
+    box-shadow: inset -6px -20px 20px 11px rgb(0 0 0 / 66%);
+    border: solid 1rem rgba(#000, .2) !important;
+}
+
+header:after {
+    border: solid 1rem rgba(#000, .2) !important;
 }
 
 h4 {
     margin: 0px;
     margin-bottom: -3px;
     text-transform: uppercase;
-    font-size: 0.7rem;
-    color: #6b696a;
+    font-size: 0.45rem;
+    color: #ffffffcf;
+    font-weight: 400;
 }
 
 .flex-center {
@@ -28,4 +33,54 @@ h4 {
 
 .border-right-white {
     border-right: solid 1px white;
+}
+
+.container {
+    padding: 5%;
+}
+
+.header-title {
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+.logo {
+    width: 11rem;
+}
+
+.glass {
+    width: 7rem;
+}
+
+.top-container {
+    align-items: flex-end;
+}
+
+@media (min-width: 768px) {
+    .flex-1-md {
+        flex: 1;
+    }
+    .container {
+        padding-right: 22%;
+    }
+    .header-glass {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-glass {
+        margin-bottom: 23px;
+    }
+    .logo {
+        flex: 1;
+    }
+    .header-glass {
+        flex: 1;
+        text-align: center;
+    }
+    .top-container {
+        flex: 1;
+    }
 }

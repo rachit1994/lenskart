@@ -1,0 +1,34 @@
+.footer-image {
+    width: 89vw;
+    margin: 5%;
+}
+
+.vignette {
+    position: relative;
+}
+
+.vignette img {
+    display: block;
+}
+
+.vignette:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: -80px -96px 219px 273px rgb(0 0 0) inset;
+}
+
+@media (max-width: 768px) {
+    .vignette:after {
+        box-shadow: -7px 1px 57px 60px rgb(0 0 0) inset;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .vignette:after {
+        box-shadow: -7px 1px 156px 150px rgb(0 0 0) inset;
+    }
+}
